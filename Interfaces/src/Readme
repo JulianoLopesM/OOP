@@ -1,0 +1,10 @@
+A interface em java é um tipo de contrato que define um conjunto de métodos que uma classe deve implementar.
+Ela não pode contar campos ou implementações de métodos, apenas as assinaturas dos métodos. As classes que implementam
+uma interface devem fornecer implementações para todos os métodos definidos na interface.
+
+Diferença para classe:
+ -Classe é uma estrutura que pode conter campos, métodos, construtores e implementações de métodos.
+ -Interface é um contrato que define apenas a assinatura dos métodos, não pode conter campos ou implementações de métodos.
+
+ *A herança não permite que uma classe herde mais de 1 classe, porém a interface permite que um classe implemente várias
+ interfaces
