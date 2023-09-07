@@ -10,7 +10,6 @@ public class BombaCombustivel {
         this.valorCombustivelPorLitro = valorCombustivelPorLitro;
         this.quantidadeCombustivel = quantidadeCombustivel;
     }
-
     public void abastecerPorValor(double valor){
         if(valor > 0 && valor <= (this.quantidadeCombustivel * this.valorCombustivelPorLitro)){
             double litrosAbastecidos = valor/this.valorCombustivelPorLitro;
@@ -19,9 +18,14 @@ public class BombaCombustivel {
         }else {
             System.out.println("Valor inválido");
         }
-
-
-
+    }
+    public void alterarValor(double novoValor) {
+        if (novoValor > 0) {
+            this.valorCombustivelPorLitro = novoValor;
+            System.out.println("Valor por litro alterado para R$" + novoValor);
+        } else {
+            System.out.println("Valor por litro inválido.");
+        }
     }
     public void abastecerPorlitro(double litros){
         if(litros > 0 && litros <= (this.quantidadeCombustivel)){
