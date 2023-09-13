@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Cliente juliano = new Cliente();
         juliano.setNome("Juliano");
+        juliano.setCpf("111111111-11");
 
         Conta cc = new ContaCorrente(juliano);
         cc.depositar(100);
@@ -18,11 +19,14 @@ public class Main {
 
         Cliente daniel = new Cliente();
         daniel.setNome("Daniel");
+        daniel.setCpf("222222222-22");
+
 
         cc = new ContaCorrente(daniel);
         cc.depositar(50);
         poupanca = new ContaPoupança(daniel);
         poupanca.depositar(50);
+
         cc.imprimirExtrato();
         poupanca.imprimirExtrato();
 

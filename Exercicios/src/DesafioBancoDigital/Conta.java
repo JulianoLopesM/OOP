@@ -8,6 +8,7 @@ public abstract class Conta {
     protected double saldo;
     protected Cliente cliente;
 
+
     public void imprimirExtrato() {
 
     }
@@ -16,6 +17,7 @@ public abstract class Conta {
         this.agencia = Conta.AGENCIA_PADRAO;
         this.numero = SEQUENCIAL++;
         this.cliente = cliente;
+
 
     }
 
@@ -49,6 +51,7 @@ public abstract class Conta {
 
     protected void imprimirInfosComuns() {
         System.out.println(String.format("Cliente: %s", this.cliente.getNome()));
+        System.out.println(String.format("Cpf do Cliente: %s", this.cliente.getCpf()));
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Numero: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
